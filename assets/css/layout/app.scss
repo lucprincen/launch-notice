@@ -1,0 +1,28 @@
+html,body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gil Sans Light', sans-serif;
+}
+
+body{
+    background: #f8f8f8;
+}
+
+
+.container{
+    max-width: 1300px;
+    width: 80%;
+    background: $black;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    margin: 50px auto;
+    color: white;
+}
+
+.button, button{
+    font-size: 1.3em;
+    
+    &.active{
+        background: $blue !important;
+        color: white;
+    }
+}

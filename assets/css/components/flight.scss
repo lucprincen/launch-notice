@@ -1,0 +1,70 @@
+.flight-list{
+    list-style: none;
+    margin: 50px 0 0 0;
+    padding: 1em 0 0 0;
+    border-top: 1px solid #eee;
+    
+    li{
+        padding: 0 2em 1em 2em;
+        margin: 0 0 1em 0;
+        border-bottom: 1px solid #eee;
+
+        a{
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            
+            strong{
+                font-family:'Exo';
+                padding-right: 10px;
+            }
+        }
+
+    }
+}
+
+.flight-details .detail{
+    display: grid;
+    grid-template-columns: repeat( 6, 1fr );
+    margin-top: 50px;
+    .content{
+        grid-column: span 4;
+        padding: 2em 3em;
+        background: $blue;
+        margin-left: -1em;
+        align-self: center;
+
+        h2{
+            display: flex;
+            align-items: center;
+            margin: 0;
+
+            .flight-num{
+                font-size: .8em;
+                padding-right: 1em;
+            }
+        }
+        
+        p{
+            line-height: 150%;
+        }
+    }
+
+    img{
+        grid-column: span 2;
+        align-self: center;
+        justify-self: center;
+        max-width: 60%;
+        height: auto;
+        margin:-25px 0 25px 0;
+    }
+
+
+    .video {
+        grid-column: span 6;
+        margin: 50px 0;
+        iframe{
+            width: 100%;
+        }
+    }
+}

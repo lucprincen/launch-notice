@@ -1,0 +1,21 @@
+header{
+    background: $blue;
+    padding: .5em 2em;
+
+    h1{
+        font-family: 'Exo';
+        font-weight: 900;
+        a{
+            color: white;
+            text-decoration: none;
+            font-size: 2em;
+            letter-spacing: .05em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,.4);
+        }
+    }
+}
+
+.mission{
+    margin: 30px auto;
+    text-align: center;
+}
