@@ -14,6 +14,7 @@
             <li class="flight" v-for="flight in flights" :key="flight.flight_number">
                 <router-link :to="{ name: 'flights-id', params: { id: flight.flight_number } }">
                     <strong>{{ flight.rocket.rocket_name }}</strong>
+                    <span class="date">{{ flightDate( flight ) }}</span>
                     <span>{{ flight.launch_site.site_name_long }}</span>
                 </router-link>
             </li>
@@ -21,6 +22,8 @@
     </div>
 </template>
 <script>
+
+import moment from 'moment';
 
 export default {
     name: 'FlightList',
@@ -41,6 +44,25 @@ export default {
         }
     },
 
+    methods:{
+
+        flightDate( flight ){
+            let _days = parseInt( moment().diff( flight.launch_date_local, 'days' ) );
+            let _plural = 's';
+
+            if( _days < 0 ){
+                return 'In '+ parseInt( _days * -1 ) +' days';
+            }else if( _days > 0 && _days < 365 ){
+                if( _days == 1 ) _days = '';
+                return `${_days} day${_plural} ago`;
+            }else{
+                let _years = moment().diff( flight.launch_date_local, 'years' );
+                if( _years == 1 ) _plural = '';
+                return `${_years} year${_plural} ago`;
+
+            }
+        }
+    }
 
 }
 

@@ -1,3 +1,4 @@
+
 module.exports = {
   /*
   ** Headers of the page
@@ -25,7 +26,7 @@ module.exports = {
     ],
 
     modules: [
-        '@nuxtjs/axios',
+        '@nuxtjs/axios'
     ],
 
     plugins: ['~/plugins/vue-youtube'],

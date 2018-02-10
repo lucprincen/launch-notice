@@ -7,6 +7,8 @@
                     <span>{{ flight.rocket.rocket_name }}</span>
                 </h2>
                 <p>{{ flight.details }}</p>
+
+                <i class="fa fa-rocket"></i>
             </div>
 
             <img v-if="flight.links.mission_patch" :src="flight.links.mission_patch" class="mission-patch"/>
