@@ -9,7 +9,7 @@
             <span>A little side-project by <a href="https://lucp.nl">@LucP</a></span>
             <span class="right">
                 <a href="https://github.com/lucprincen/launch-notice" target="_blank">Project on Github</a>
-                <a href="https://netlify" target="_blank">Hosted by Netlify</a>
+                <a href="https://netlify.com" target="_blank">Hosted by Netlify</a>
             </span>
         </footer>
 

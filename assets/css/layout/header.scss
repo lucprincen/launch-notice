@@ -1,5 +1,5 @@
 header{
-    background: $blue;
+    background: linear-gradient( to bottom, darken($blue, 10%), lighten($blue, 5%));
     padding: .5em 2em;
 
     h1{

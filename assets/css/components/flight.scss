@@ -1,22 +1,25 @@
 .flight-list{
     list-style: none;
     margin: 50px 0 0 0;
-    padding: 1em 0 0 0;
+    padding:0;
     border-top: 1px solid #eee;
     
     li{
-        padding: 0 2em 1em 2em;
-        margin: 0 0 1em 0;
         border-bottom: 1px solid #eee;
 
         a{
             color: white;
             display: flex;
             justify-content: space-between;
-            
+            padding: 1em 2em 1em 2em;
+
             strong{
                 font-family:'Exo';
                 padding-right: 10px;
+            }
+
+            &:hover{
+                background: $blue;
             }
         }
 
@@ -30,13 +33,14 @@
     .content{
         grid-column: span 4;
         padding: 2em 3em;
-        background: $blue;
+        background: linear-gradient( to bottom, darken($blue, 10%), lighten($blue, 5%));
         margin-left: -1em;
         align-self: center;
 
         h2{
             display: flex;
             align-items: center;
+            font-size: 2em;
             margin: 0;
 
             .flight-num{
